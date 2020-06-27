@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragment1"
+    android:background="@drawable/background"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:weightSum="10"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:background="@drawable/buttonbackground"
+                android:text="날씨|기온"
+                android:textColor="#1B1A1A"
+                android:id="@+id/btn_child1"
+                android:layout_width="60dp"
+                android:layout_height="35dp"
+                android:layout_marginLeft="7dp"
+                android:layout_marginTop="7dp"
+                android:layout_marginRight="7dp"
+                android:layout_marginBottom="10dp">
+            </Button>
+
+            <Button
+                android:background="@drawable/buttonbackground"
+                android:text="체형별"
+                android:textColor="#1B1A1A"
+                android:id="@+id/btn_child2"
+                android:layout_width="60dp"
+                android:layout_height="35dp"
+                android:layout_marginLeft="7dp"
+                android:layout_marginTop="7dp"
+                android:layout_marginRight="7dp"
+                android:layout_marginBottom="10dp">
+            </Button>
+
+            <Button
+                android:background="@drawable/buttonbackground"
+                android:text="컬러조합"
+                android:textColor="#1B1A1A"
+                android:id="@+id/btn_child3"
+                android:layout_width="60dp"
+                android:layout_height="35dp"
+                android:layout_marginLeft="7dp"
+                android:layout_marginTop="7dp"
+                android:layout_marginRight="7dp"
+                android:layout_marginBottom="10dp">
+            </Button>
+        </LinearLayout>
+
+       <androidx.core.widget.NestedScrollView
+           android:layout_weight="9"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent">
+
+
+               <LinearLayout
+                   android:id="@+id/child_fragment"
+                   android:orientation="vertical"
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent">
+               </LinearLayout>
+
+       </androidx.core.widget.NestedScrollView>
+
+    </LinearLayout>
+
+
+</FrameLayout>

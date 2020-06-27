@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ChildFragment2">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:text="[ 체형별 옷차림 ]"
+                android:textColor="#ffc9f3"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            </TextView>
+        </LinearLayout>
+
+            <LinearLayout
+                android:background="#dfeffd"
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_marginTop="25dp"
+                android:layout_width="380dp"
+                android:layout_height="645dp">
+
+                <TextView
+                    android:text="[ 남자 ]"
+                    android:textSize="30sp"
+                    android:textColor="#536DFE"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginTop="15sp">
+                </TextView>
+
+                <TextView
+                    android:text="마른 체형"
+                    android:textSize="45sp"
+                    android:textStyle="bold"
+                    android:textColor="#536DFE"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp">
+                </TextView>
+
+                <TextView
+                    android:text="베이직한 스타일링에 레이어드 추천!"
+                    android:textSize="25sp"
+                    android:textColor="#212122"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp">
+                </TextView>
+                <TextView
+                    android:text="(가로 스트라이프 , 밝은 셔츠 , 일자 바지)"
+                    android:textSize="21sp"
+                    android:textColor="#212122"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp">
+                </TextView>
+                <TextView
+                    android:text="어두운 색 보단 밝은색 추천!"
+                    android:textSize="20sp"
+                    android:textColor="#448AFF"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp">
+                </TextView>
+
+                <ImageView
+                    android:layout_width="250dp"
+                    android:layout_height="320dp"
+                    android:layout_marginTop="15dp"
+                    android:src="@drawable/thin">
+
+                </ImageView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:background="#dfeffd"
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_marginTop="30dp"
+                android:layout_width="380dp"
+                android:layout_height="645dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="하체 비만 형"
+                    android:textColor="#536DFE"
+                    android:textSize="45sp"
+                    android:textStyle="bold">
+
+                </TextView>
+
+                <TextView
+                    android:text="어두운 와이드 팬츠 밝은 상의 추천!"
+                    android:textSize="25sp"
+                    android:textColor="#212122"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp">
+                </TextView>
+
+                <TextView
+                    android:text="(와이드 팬츠 , 타이다이 셔츠)"
+                    android:textSize="21sp"
+                    android:textColor="#212122"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp">
+                </TextView>
+                <TextView
+                    android:text="상의는 밝고 여유있는 색 하의는 어두운 색 추천!"
+                    android:textSize="17sp"
+                    android:textColor="#448AFF"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp">
+                </TextView>
+                <ImageView
+                    android:layout_width="250dp"
+                    android:layout_height="320dp"
+                    android:layout_marginTop="15dp"
+                    android:src="@drawable/normal">
+
+                </ImageView>
+
+            </LinearLayout>
+
+            <LinearLayout
+            android:background="#dfeffd"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginTop="30dp"
+            android:layout_width="380dp"
+            android:layout_height="645dp">
+
+            <TextView
+                android:text="뚱뚱한 체형"
+                android:textSize="45sp"
+                android:textStyle="bold"
+                android:textColor="#536DFE"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+            </TextView>
+
+            <TextView
+                android:text="상의는 어두운 스트라이프"
+                android:textSize="23sp"
+                android:textColor="#212122"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp">
+            </TextView>
+                <TextView
+                    android:text="하의는 밝은 반바지 추천!"
+                    android:textSize="23sp"
+                    android:textColor="#212122"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp">
+                </TextView>
+
+             <TextView
+                 android:text="(어두운 스트라이프 , 반바지)"
+                 android:textSize="21sp"
+                 android:textColor="#212122"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_marginTop="15dp">
+             </TextView>
+            <TextView
+                android:text="세로 스트라이프에 어두운 상의로 날씬해 보이는 효과!"
+                android:textSize="17sp"
+                android:textColor="#448AFF"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+            </TextView>
+
+                <ImageView
+                    android:layout_width="250dp"
+                    android:layout_height="320dp"
+                    android:layout_marginTop="15dp"
+                    android:src="@drawable/fat">
+                </ImageView>
+
+         </LinearLayout>
+
+
+
+
+        <LinearLayout
+            android:background="#FAD1F1"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginTop="25dp"
+            android:layout_width="380dp"
+            android:layout_height="645dp">
+
+            <TextView
+                android:text="[ 여자 ]"
+                android:textSize="30sp"
+                android:textColor="#E087EF"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="15sp">
+            </TextView>
+
+            <TextView
+                android:text="마른 체형"
+                android:textSize="45sp"
+                android:textStyle="bold"
+                android:textColor="#E562FB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+            </TextView>
+
+            <TextView
+                android:text="밝은 컬러 패턴 의상 추천!"
+                android:textSize="25sp"
+                android:textColor="#212122"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp">
+            </TextView>
+            <TextView
+                android:text="(플라워 원피스 , 주황 가디건)"
+                android:textSize="21sp"
+                android:textColor="#212122"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp">
+            </TextView>
+            <TextView
+                android:text="밝은 패턴의상 주황 가디건으로 포인트 !"
+                android:textSize="20sp"
+                android:textColor="#E087EF"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+            </TextView>
+
+            <ImageView
+                android:layout_width="250dp"
+                android:layout_height="320dp"
+                android:layout_marginTop="15dp"
+                android:src="@drawable/wthin">
+
+            </ImageView>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:background="#FAD1F1"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginTop="25dp"
+            android:layout_width="380dp"
+            android:layout_height="645dp">
+
+            <TextView
+                android:text="하체 비만 형"
+                android:textSize="45sp"
+                android:textStyle="bold"
+                android:textColor="#E562FB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+            </TextView>
+
+            <TextView
+                android:text="밝은 상의 자켓 풍성한 스커트 추천!"
+                android:textSize="25sp"
+                android:textColor="#212122"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp">
+            </TextView>
+            <TextView
+                android:text="(플라워 원피스 , 주황 가디건)"
+                android:textSize="21sp"
+                android:textColor="#212122"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp">
+            </TextView>
+            <TextView
+                android:text="밝은 패턴의상 주황 가디건으로 포인트 !"
+                android:textSize="20sp"
+                android:textColor="#E087EF"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+            </TextView>
+
+            <ImageView
+                android:layout_width="250dp"
+                android:layout_height="320dp"
+                android:layout_marginTop="15dp"
+                android:src="@drawable/wnormal">
+
+            </ImageView>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:background="#FAD1F1"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginTop="25dp"
+            android:layout_width="380dp"
+            android:layout_height="645dp">
+
+            <TextView
+                android:text="뚱뚱한 체형"
+                android:textSize="45sp"
+                android:textStyle="bold"
+                android:textColor="#E562FB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+            </TextView>
+
+            <TextView
+                android:text="무채색 색상 및 시선을 분산 시키기!"
+                android:textSize="25sp"
+                android:textColor="#212122"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp">
+            </TextView>
+            <TextView
+                android:text="(원피스 형 티셔츠 , 선글라스 , 팔찌)"
+                android:textSize="21sp"
+                android:textColor="#212122"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp">
+            </TextView>
+            <TextView
+                android:text="시선을 분산 시키는 아이템 추천!"
+                android:textSize="20sp"
+                android:textColor="#E087EF"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+            </TextView>
+
+            <ImageView
+                android:layout_width="250dp"
+                android:layout_height="320dp"
+                android:layout_marginTop="15dp"
+                android:src="@drawable/wfat">
+
+            </ImageView>
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+</FrameLayout>

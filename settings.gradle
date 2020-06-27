@@ -1,0 +1,2 @@
+rootProject.name='CRC_Project'
+include ':app'

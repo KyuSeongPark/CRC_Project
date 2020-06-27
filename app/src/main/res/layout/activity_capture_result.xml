@@ -1,0 +1,472 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CaptureResultActivity"
+    android:orientation="vertical"
+    android:background="#ffffff">
+    <LinearLayout
+        android:background="#df6685"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+        <LinearLayout
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:layout_width="210dp"
+            android:layout_height="40dp">
+            <Button
+                android:layout_marginLeft="5dp"
+                android:id="@+id/btn_home"
+                android:background="@drawable/home1"
+                android:layout_width="38dp"
+                android:layout_height="38dp">
+            </Button>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <Button
+                android:background="@drawable/buttonbackground"
+                android:textColor="#1B1A1A"
+                android:id="@+id/btn_Recamera"
+                android:text="카메라"
+                android:layout_width="60dp"
+                android:layout_height="30dp"
+                android:layout_marginRight="4dp">
+            </Button>
+
+            <Button
+                android:background="@drawable/buttonbackground"
+                android:id="@+id/btn_Regallery"
+                android:textColor="#1B1A1A"
+                android:text="갤러리"
+                android:layout_width="60dp"
+                android:layout_height="30dp"
+                android:layout_marginRight="4dp">
+            </Button>
+
+            <Button
+                android:background="@drawable/buttonbackground"
+                android:id="@+id/btn_save"
+                android:textColor="#1B1A1A"
+                android:text="저장"
+                android:layout_width="60dp"
+                android:layout_height="30dp"
+                android:onClick="mOnCaptureClick"
+                android:layout_marginRight="4dp">
+            </Button>
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:background="#ffc9f3"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/captured"
+            android:layout_gravity="center"
+            android:text="촬영완료!"
+            android:textColor="#000000"
+            android:textSize="17sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp">
+
+        </TextView>
+        <ImageView
+            android:id="@+id/camera_result"
+            android:layout_gravity="center"
+            android:layout_width="250dp"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop">
+        </ImageView>
+
+        <TextView
+            android:gravity="center"
+            android:text="Select Your Skin Type !"
+            android:textSize="20sp"
+            android:textStyle="italic|bold"
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+        </TextView>
+    </LinearLayout>
+
+    <TextView
+        android:gravity="center"
+        android:background="#ffffff"
+        android:text="SKIN TONE"
+        android:textStyle="bold|italic"
+        android:textColor="#171717"
+        android:textSize="25sp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+    </TextView>
+
+
+   <FrameLayout
+       android:layout_marginTop="20dp"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+
+       <ScrollView
+           android:layout_width="match_parent"
+           android:layout_height="match_parent">
+
+           <LinearLayout
+               android:orientation="vertical"
+               android:layout_width="match_parent"
+               android:layout_height="match_parent">
+
+               <LinearLayout
+                   android:gravity="center"
+                   android:id="@+id/result_fragment"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_marginBottom="50dp">
+
+                   <Button
+                       android:id="@+id/btn_cool"
+                       android:layout_width="110dp"
+                       android:layout_height="300dp"
+                       android:layout_marginRight="15dp"
+                       android:background="@drawable/cooltone"></Button>
+
+                   <Button
+                       android:layout_marginLeft="15dp"
+                       android:background="@drawable/warmtone"
+                       android:id="@+id/btn_warm"
+                       android:layout_width="110dp"
+                       android:layout_height="300dp">
+                   </Button>
+
+               </LinearLayout>
+
+               <LinearLayout
+                   android:id="@+id/test"
+                   android:visibility="gone"
+                   android:orientation="vertical"
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent">
+
+                   <LinearLayout
+                       android:orientation="vertical"
+                       android:id="@+id/CoolSummer"
+                       android:layout_width="match_parent"
+                       android:layout_height="match_parent"
+                       android:layout_marginBottom="50dp"
+                       android:layout_marginTop="50dp">
+                       <TextView
+                           android:layout_gravity="center"
+                           android:text="여름 쿨톤"
+                           android:textSize="30sp"
+                           android:textColor="#000000"
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"/>
+
+                       <ImageView
+                           android:background="@drawable/coolsummer"
+                           android:layout_gravity="center"
+                           android:layout_width="250dp"
+                           android:layout_height="300dp">
+                       </ImageView>
+
+                       <ImageView
+                           android:background="@drawable/coolsummertone"
+                           android:layout_width="130dp"
+                           android:layout_height="50dp">
+                       </ImageView>
+
+                       <TextView
+                           android:layout_gravity="center"
+                           android:text="페미니한, 깨끗한, 시원한, 맑은, 우아한 "
+                           android:textSize="24sp"
+                           android:textStyle="bold"
+                           android:textColor="#000000"
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:layout_marginBottom="5dp">
+                       </TextView>
+
+                       <TextView
+                           android:layout_gravity="center"
+                           android:text="피부색이 여름쿨톤인 사람은 대체적으로"
+                           android:textSize="14sp"
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content">
+                       </TextView>
+
+                       <TextView
+                           android:layout_gravity="center"
+                           android:text="여성스럽고 깨끗한 이미지를 가진다."
+                           android:textSize="14sp"
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content">
+                       </TextView>
+
+                       <TextView
+                           android:layout_gravity="center"
+                           android:text="쿨톤의 컬러들은 블루베이스로 이루어져 있고 "
+                           android:textSize="14sp"
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content">
+                       </TextView>
+
+                       <TextView
+                           android:layout_gravity="center"
+                           android:text="난색이어도 차가운 기운을 띈다."
+                           android:textSize="14sp"
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content">
+                       </TextView>
+
+                       <ImageView
+                           android:layout_gravity="center"
+                           android:background="@drawable/coolsummercolor"
+                           android:layout_width="340dp"
+                           android:layout_height="270dp">
+                       </ImageView>
+                   </LinearLayout>
+
+
+                   <LinearLayout
+                       android:orientation="vertical"
+                       android:id="@+id/CoolWinter"
+                       android:layout_width="match_parent"
+                       android:layout_height="match_parent"
+                       android:layout_marginBottom="50dp"
+                       android:layout_marginTop="50dp">
+                       <TextView
+                           android:layout_gravity="center"
+                           android:text="겨울 쿨톤"
+                           android:textSize="30sp"
+                           android:textColor="#000000"
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"/>
+
+                       <ImageView
+                           android:background="@drawable/coolwinter"
+                           android:layout_gravity="center"
+                           android:layout_width="250dp"
+                           android:layout_height="300dp">
+                       </ImageView>
+
+                       <ImageView
+                           android:background="@drawable/coolwintertone"
+                           android:layout_width="130dp"
+                           android:layout_height="50dp">
+                       </ImageView>
+
+                       <TextView
+                           android:layout_gravity="center"
+                           android:text="시크한, 개성있는, 화려한, 강렬한, 섹시한,"
+                           android:textSize="24sp"
+                           android:textStyle="bold"
+                           android:textColor="#000000"
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:layout_marginBottom="5dp">
+                       </TextView>
+
+                       <TextView
+                           android:layout_gravity="center"
+                           android:text="차가운, 도도한"
+                           android:textSize="24sp"
+                           android:textStyle="bold"
+                           android:textColor="#000000"
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:layout_marginBottom="5dp">
+                       </TextView>
+
+                       <TextView
+                           android:layout_gravity="center"
+                           android:text="피부색이 겨울쿨톤인 사람은 개인의 고유의 특징이 강하며 카리스마 있다 . "
+                           android:textSize="14sp"
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content">
+                       </TextView>
+
+                       <TextView
+                           android:layout_gravity="center"
+                           android:text="차갑게 밝은 피부부터 짙고 쿨한 피부색까지 가진 독특한 그룹이다.  "
+                           android:textSize="14sp"
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content">
+                       </TextView>
+
+                       <ImageView
+                           android:layout_gravity="center"
+                           android:background="@drawable/coolwintercolor"
+                           android:layout_width="340dp"
+                           android:layout_height="270dp">
+                       </ImageView>
+                   </LinearLayout>
+
+
+               </LinearLayout>
+
+               <LinearLayout
+                   android:id="@+id/test2"
+                   android:visibility="gone"
+                   android:orientation="vertical"
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent">
+
+                   <LinearLayout
+                       android:orientation="vertical"
+                       android:id="@+id/WarmSpring"
+                       android:layout_width="match_parent"
+                       android:layout_height="match_parent"
+                       android:layout_marginBottom="50dp"
+                       android:layout_marginTop="50dp">
+                       <TextView
+                           android:layout_gravity="center"
+                           android:text="봄 웜톤"
+                           android:textSize="30sp"
+                           android:textColor="#000000"
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"/>
+
+                       <ImageView
+                           android:background="@drawable/warmspring"
+                           android:layout_gravity="center"
+                           android:layout_width="250dp"
+                           android:layout_height="300dp">
+                       </ImageView>
+
+                       <ImageView
+                           android:background="@drawable/warmspringtone"
+                           android:layout_width="130dp"
+                           android:layout_height="50dp">
+                       </ImageView>
+
+                       <TextView
+                           android:layout_gravity="center"
+                           android:text="밝은, 발랄한, 부드러운, 귀여운, 로맨틱 "
+                           android:textSize="24sp"
+                           android:textStyle="bold"
+                           android:textColor="#000000"
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:layout_marginBottom="5dp">
+                       </TextView>
+
+                       <TextView
+                           android:layout_gravity="center"
+                           android:text="피부색이 봄 원톤인 사람은 대체적으로 밝고 화사한 이미지를 가진다. "
+                           android:textSize="14sp"
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content">
+                       </TextView>
+
+                       <TextView
+                           android:layout_gravity="center"
+                           android:text="새싹과 꽃이 피어나는 봄의 맑은 이미지를 생각하며 스타일링 하면 좋다.  "
+                           android:textSize="14sp"
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content">
+                       </TextView>
+
+                       <ImageView
+                           android:layout_gravity="center"
+                           android:background="@drawable/warmspringcolor"
+                           android:layout_width="340dp"
+                           android:layout_height="270dp">
+                       </ImageView>
+                   </LinearLayout>
+
+
+                   <LinearLayout
+                       android:orientation="vertical"
+                       android:id="@+id/WarmAutumn"
+                       android:layout_width="match_parent"
+                       android:layout_height="match_parent"
+                       android:layout_marginBottom="50dp"
+                       android:layout_marginTop="50dp">
+                       <TextView
+                           android:layout_gravity="center"
+                           android:text="가을 웜톤"
+                           android:textSize="30sp"
+                           android:textColor="#000000"
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"/>
+
+                       <ImageView
+                           android:background="@drawable/warmautumn"
+                           android:layout_gravity="center"
+                           android:layout_width="250dp"
+                           android:layout_height="300dp">
+                       </ImageView>
+
+                       <ImageView
+                           android:background="@drawable/warmautumntone"
+                           android:layout_width="130dp"
+                           android:layout_height="50dp">
+                       </ImageView>
+
+                       <TextView
+                           android:layout_gravity="center"
+                           android:text="클래식, 내추럴, 화려한, 깊은, 섹시한,"
+                           android:textSize="24sp"
+                           android:textStyle="bold"
+                           android:textColor="#000000"
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:layout_marginBottom="5dp">
+                       </TextView>
+
+                       <TextView
+                           android:layout_gravity="center"
+                           android:text="노을빛, 중후한"
+                           android:textSize="24sp"
+                           android:textStyle="bold"
+                           android:textColor="#000000"
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:layout_marginBottom="5dp">
+                       </TextView>
+
+                       <TextView
+                           android:layout_gravity="center"
+                           android:text="봄 웜톤 보다 더 스킨톤이 깊어진다. "
+                           android:textSize="14sp"
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content">
+                       </TextView>
+
+                       <TextView
+                           android:layout_gravity="center"
+                           android:text="클래식 하고 글램한 느낌이 있고 건강한 윤기가 흐른다."
+                           android:textSize="14sp"
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content">
+                       </TextView>
+
+                       <ImageView
+                           android:layout_gravity="center"
+                           android:background="@drawable/warmautumncolor"
+                           android:layout_width="340dp"
+                           android:layout_height="270dp">
+                       </ImageView>
+                   </LinearLayout>
+
+
+               </LinearLayout>
+
+           </LinearLayout>
+       </ScrollView>
+
+
+
+   </FrameLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NoticeTipActivity"
+    android:orientation="vertical"
+    android:background="#ffc9f3">
+
+    <LinearLayout
+        android:background="#df6685"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/btn_home"
+            android:layout_weight="0"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/home1"
+            android:layout_width="38dp"
+            android:layout_height="38dp">
+        </Button>
+
+        <TextView
+            android:text="Color Rrecomend for Clothe"
+            android:textSize="22sp"
+            android:textColor="#ffffff"
+            android:gravity="center"
+            android:layout_marginRight="42dp"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        </TextView>
+
+    </LinearLayout>
+
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        app:tabIndicatorColor="#ffffff"
+        app:tabSelectedTextColor="#ffffff">
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/tab_item1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="코디 팁">
+
+        </com.google.android.material.tabs.TabItem>
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/tab_item2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="공지">
+        </com.google.android.material.tabs.TabItem>
+
+    </com.google.android.material.tabs.TabLayout>
+
+    <androidx.viewpager.widget.ViewPager
+        android:background="@drawable/background"
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

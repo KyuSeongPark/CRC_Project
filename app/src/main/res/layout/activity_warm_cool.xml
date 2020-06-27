@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WarmCoolActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:background="#df6685"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/btn_home"
+            android:layout_weight="0"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/home1"
+            android:layout_width="38dp"
+            android:layout_height="38dp">
+        </Button>
+
+        <TextView
+            android:text="Color Rrecomend for Clothe"
+            android:textSize="22sp"
+            android:textColor="#ffffff"
+            android:gravity="center"
+            android:layout_marginRight="42dp"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        </TextView>
+
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:background="@drawable/background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_marginTop="7dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ViewFlipper
+                    android:id="@+id/Viewlipper2"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:background="@drawable/view3"
+                            android:layout_width="398dp"
+                            android:layout_height="230dp">
+                        </ImageView>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:background="@drawable/view4"
+                            android:layout_width="398dp"
+                            android:layout_height="230dp">
+                        </ImageView>
+                    </LinearLayout>
+
+                </ViewFlipper>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:textSize="25sp"
+                        android:textColor="#000000"
+                        android:text="퍼스널 컬러란?"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="15dp"
+                        android:layout_marginTop="20dp"/>
+
+                    <TextView
+                        android:textColor="#222121"
+                        android:layout_gravity="center"
+                        android:text="자신이 가지고 있는 신체색과 조화를 이루어"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:textColor="#222121"
+                        android:layout_gravity="center"
+                        android:text="생기가 돌고 활기차 보이도록 하는 개개인의 컬러 입니다."
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="40dp"/>
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:textSize="25sp"
+                        android:text="퍼스널 컬러 진단법"
+                        android:textColor="#000000"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:textColor="#222121"
+                        android:layout_gravity="center"
+                        android:text="퍼스널 컬러는 크게 웜톤 과 쿨톤으로 나눌수 있습니다"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <LinearLayout
+                        android:layout_gravity="center"
+                        android:orientation="horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:textColor="#222121"
+                            android:layout_gravity="center"
+                            android:text="통상적으로 피부에 "
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+                        <TextView
+                            android:textColor="#FFAB40"
+                            android:layout_gravity="center"
+                            android:text="노란빛이"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                        <TextView
+                            android:textColor="#222121"
+                            android:layout_gravity="center"
+                            android:text="돌면"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                        <TextView
+                            android:textColor="#FFAB40"
+                            android:layout_gravity="center"
+                            android:text="웜톤"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_gravity="center"
+                        android:orientation="horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="30dp">
+
+                        <TextView
+                            android:textColor="#536DFE"
+                            android:layout_gravity="center"
+                            android:text="푸른빛이"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+                        <TextView
+                            android:textColor="#222121"
+                            android:layout_gravity="center"
+                            android:text="돌면"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+                        <TextView
+                            android:textColor="#536DFE"
+                            android:layout_gravity="center"
+                            android:text="쿨톤"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                        <TextView
+                            android:textColor="#222121"
+                            android:layout_gravity="center"
+                            android:text="이라고 합니다."
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_gravity="center"
+                        android:background="@drawable/personalcolor"
+                        android:layout_width="350dp"
+                        android:layout_height="350dp"
+                        android:layout_marginBottom="30dp"/>
+
+                    <ImageView
+                        android:layout_gravity="center"
+                        android:background="@drawable/checklist"
+                        android:layout_width="250dp"
+                        android:layout_height="360dp"
+                        android:layout_marginBottom="30dp"/>
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </ScrollView>
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

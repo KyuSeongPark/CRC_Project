@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:weightSum="9"
+    android:background="#ffc9f3"
+    >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="420dp"
+            android:background="@drawable/loading3">
+
+        </ImageView>
+    </LinearLayout>
+
+
+    <com.github.ybq.android.spinkit.SpinKitView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/spin_kit"
+        style="@style/SpinKitView.Large.Circle"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        app:SpinKit_Color="#ffffff" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="87dp"
+        android:gravity="center_horizontal"
+        android:text="C R C"
+        android:textColor="#FB4081"
+        android:textSize="60sp"
+        android:textStyle="bold|italic">
+
+    </TextView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_weight="2"
+        android:gravity="center_horizontal"
+        android:text="Color Recomend for Clothe "
+        android:textSize="25sp"
+        android:textColor="#FF4081"
+        android:textStyle="italic">
+
+    </TextView>
+
+
+
+
+
+
+
+</LinearLayout>

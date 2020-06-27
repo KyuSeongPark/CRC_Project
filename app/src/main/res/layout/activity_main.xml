@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:weightSum="10"
+    >
+    <LinearLayout
+        android:background="#df6685"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center">
+
+        <TextView
+            android:text="Color Recomend for Clothe"
+            android:textSize="22sp"
+            android:textColor="#ffffff"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        </TextView>
+
+    </LinearLayout>
+   <LinearLayout
+       android:layout_weight="1"
+       android:gravity="center"
+       android:layout_gravity="center"
+       android:layout_width="match_parent"
+       android:layout_height="45dp"
+       >
+       <TextView
+           android:clickable="true"
+           android:id="@+id/tv_NoticeTip"
+           android:layout_weight="1"
+           android:gravity="center"
+           android:layout_width="wrap_content"
+           android:layout_height="45dp"
+           android:textColor="#ffffff"
+           android:background="#df6685"
+           android:textStyle="bold"
+           android:text="            TIP | 여러 상황별 코디 법이 궁금하다면? 클릭! "
+           android:ellipsize="marquee"
+           android:marqueeRepeatLimit="marquee_forever"
+           android:singleLine="true"
+           android:textSize="19sp">
+       </TextView>
+       <Button
+           android:background="#df6685"
+           android:textColor="#ffffff"
+           android:id="@+id/btn_NoticeTip"
+           android:text="➣"
+           android:textStyle="bold"
+           android:textSize="18sp"
+           android:layout_width="40dp"
+           android:layout_height="45dp">
+       </Button>
+   </LinearLayout>
+
+   <LinearLayout
+       android:background="@drawable/background"
+       android:layout_weight="9"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:orientation="vertical">
+
+       <ViewFlipper
+           android:layout_marginTop="7dp"
+           android:layout_gravity="center"
+           android:id="@+id/viewFlipper1"
+           android:layout_width="398dp"
+           android:layout_height="230dp"
+           >
+
+           <LinearLayout
+               android:id="@+id/one"
+               android:layout_width="match_parent"
+               android:layout_height="230dp"
+               android:background="@drawable/view1"
+               android:orientation="vertical">
+
+           </LinearLayout>
+
+           <LinearLayout
+               android:background="@drawable/view3"
+               android:id="@+id/two"
+               android:layout_width="match_parent"
+               android:layout_height="230dp"
+               android:orientation="vertical">
+
+           </LinearLayout>
+
+           <LinearLayout
+               android:background="@drawable/view2"
+               android:id="@+id/three"
+               android:layout_width="match_parent"
+               android:layout_height="230dp"
+               android:orientation="vertical">
+           </LinearLayout>
+
+
+       </ViewFlipper>
+
+
+       <LinearLayout
+           android:orientation="horizontal"
+           android:layout_gravity="center"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="50dp">
+
+           <Button
+               android:id="@+id/btn_camera"
+               android:clickable="true"
+               android:layout_marginRight="20dp"
+               android:background="@drawable/camera2"
+               android:layout_width="140dp"
+               android:layout_height="140dp">
+           </Button>
+
+           <Button
+               android:id="@+id/btn_gallery"
+               android:layout_width="140dp"
+               android:layout_height="140dp"
+               android:layout_marginLeft="20dp"
+               android:background="@drawable/gallery2"
+               android:clickable="true">
+
+           </Button>
+       </LinearLayout>
+
+       <LinearLayout
+           android:orientation="horizontal"
+           android:layout_gravity="center"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="35dp">
+
+           <Button
+               android:id="@+id/btn_warmcool"
+              android:background="@drawable/btnwarmcool"
+               android:layout_marginRight="20dp"
+               android:layout_width="140dp"
+               android:layout_height="140dp">
+           </Button>
+
+           <Button
+               android:background="@drawable/btntip"
+               android:id="@+id/btn_tip"
+               android:clickable="true"
+               android:layout_marginLeft="20dp"
+               android:layout_width="140dp"
+               android:layout_height="140dp">
+           </Button>
+       </LinearLayout>
+
+   </LinearLayout>
+
+
+
+
+
+</LinearLayout>
